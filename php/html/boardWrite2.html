@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 표준 사이트 만들기: 회원가입</title>
+
+    <!-- SEO(검색엔진최적화) -->
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="웹 표준을 준수한 사이트입니다.">
+    <meta name="keywords" content="웹표준, 웹접근성, 웹호환성, 사이트제작, 사이트만들기, 포트폴리오">
+    <meta name="robots" content="all">
+
+    <!-- 메타 정보 -->
+    <meta property="og:title" content="웹표준 사이트 제작">
+    <meta property="og:url" content="https://webstoryboy.github.io/webs_class/site/webClass/index.html">
+    <meta property="og:image" content="https://webstoryboy.github.io/webs_class/site/webClass/img/icon.png">
+    <meta property="og:description" content="웹 표준을 준수한 사이트 튜토리얼입니다.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="웹표준 사이트 제작">
+    <meta name="twitter:url" content="https://webstoryboy.github.io/webs_class/site/webClass/index.html">
+    <meta name="twitter:image" content="https://webstoryboy.github.io/webs_class/site/webClass/img/icon.png">
+    <meta name="twitter:description" content="웹 표준을 준수한 사이트 튜토리얼입니다.">
+
+    <!-- 아이콘 & 파비콘 -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/icon114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon114.png">
+    <link rel="apple-touch-icon-precomposed" href="img/icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="img/icon167.png" />
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="assets/css/common2.css">
+    <link rel="stylesheet" href="assets/css/fonts2.css">
+    <link rel="stylesheet" href="assets/css/reset2.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+   
+</head>
+
+<body>
+
+    <div id="skip">
+        <a href="#contents">컨텐츠 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo">
+                <div class="yobock_jobock"></div>
+                <a href="index.html"><em>요복조복</em></a>
+            </h1>
+            <div class="member">
+                <a href="login.html">로그인</a>
+                <a href="join.html">회원가입</a>
+            </div>
+        </header> 
+        <!-- //header -->
+        <main id="contents">
+            <h2 class="ir_so">컨텐츠 영역</h2>
+            <section id="board-type" class="section center mb100">
+                <div class="container">
+                    <h3 class="section__title">게시글 작성하기</h3>
+                    <div class="board__inner">
+                        <div class="board__modify">
+                            <form action="boardModifySave.php" name="boardModify" method="post">
+                                <fieldset>
+                                    <legend class="ir_so">게시판 작성 영역</legend>
+                                    <div>
+                                        <label for="boardTitle">제목</label>
+                                        <input type="text" name="boardTitle" id="boardTitle" placeholder="제목을 작성해 주세요!">
+                                    </div>
+                                    <div>
+                                        <label for="boardContents">내용</label>
+                                        <textarea name="boardContents" id="boardContents" rows="20" placeholder="내용을 작성해 주세요!"></textarea>
+                                    </div>
+                                    <div class="board__btn">
+                                        <button type="submit" value="저장하기">저장하기</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <!-- //wrap -->
+</body>
+
+</html>

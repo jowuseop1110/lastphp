@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+em {
+    font-style: normal;
+}
+body {
+    width: 2480px;
+}
+#wrap {
+    width: 2000px;
+    margin: 0 auto;
+}
+/* #header {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.header__logo {
+    width: 232px;
+    height: 149px;
+    margin-top: 120px;
+    background: url(../img/logo.png);
+}
+.header__menu {
+    margin: 200px 0 0 340px
+}
+.header__menu ul li {
+    display: inline-block;
+}
+.header__menu ul li a {
+    font-size: 36px;
+    margin-left: 90px;
+} */
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+#header {height: 100px;}
+#header h1 {float: left; padding-top: 5px;}
+#header h1 img {width: 130px;}
+#header .nav {float: right; z-index: 100; position: relative; margin-top: 20px;}
+#header .nav li {position: relative; float: left; width: 120px; text-align: center;}
+#header .nav li a {display: block; padding: 20px 15px; background: #ccc; white-space: nowrap;}
+#header .nav li a:hover {background: #ddd;}
+#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 59px; background: #ddd;}
+#header .nav li ul.submenu li a {padding: 10px;}
+#header .nav li ul.submenu li a:hover {background: #999;}
+#contents {
+    width: 2000px;
+    height: 750px;
+    background:url(../img/img1.jpg);
+    margin-bottom: 45px;
+    display: inline-block;
+}
+#nav {
+    width: 2000px;
+    height: 430px;
+    margin-bottom: 70px;
+}
+.nav__news {
+    width: 45%;
+    height: 330px;
+    border: 1px solid #EEEEEE;
+    float: left;
+    margin-right: 32px;
+    padding: 50px;
+    position: relative;
+}
+.nav__news h2 {
+    font-size: 40px;
+    margin-bottom: 45px;
+}
+.nav__news em {
+    color: #a3a1a1;
+}
+.nav__news ul {}
+.nav__news ul li {
+    line-height: 1.6;
+}
+.nav__news ul li a {
+  font-size: 35px;
+}
+.nav__news ul li span {
+    float: right;
+    width: 30%;
+    text-align: right;
+    font-size: 30px;
+    color: #a3a1a1;
+}
+.nav__more {
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    right: 110px;
+    color: #a3a1a1;
+}
+.nav__more span {
+    width: 45px;
+    height: 45px;
+    background: url(../img/more.png);
+}
+.nav__event {
+    width: 48%;
+    height: 430px;
+    border: 1px solid rgb(174, 172, 172);
+    background:url(../img/img2.jpg);
+    float: left;
+}
+#banner {
+    width: 2000px;
+    height: 560px;
+    background: rgb(152, 141, 141);
+    margin-bottom: 100px;
+}
+#banner h2 {
+    font-size: 40px;
+}
+#banner .banner__clice {
+    width: 470px;
+    height: 560px;
+}
+#banner .banner__clice img {}
+#banner .banner__clice span {}
+#footer {
+    width: 2000px;
+    height: 365px;
+    background: rgb(83, 32, 32);
+    
+}
+
+
+
+
+.notice {position: relative; padding: 30px;}
+.notice ul li {float: left; margin-right: 20px;}
+.notice ul li a {font-size: 24px; color: #999; font-weight: bold;}
+.notice ul li.active a {color: #000;}
+.notice ul li ul {position: absolute; left: 30px; top: 70px;}
+.notice ul li ul li {width: 95%; padding: 5px 0;}
+.notice ul li ul li a {float: left; width: 60%; font-size: 16px; color: #333;
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight: normal;}
+.notice ul li ul li span {float: right; width: 20%;}
+.notice .more {position: absolute; right: 30px; top: 35px;}
